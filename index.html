@@ -38,7 +38,7 @@
         }
 
         h2 {
-            margin-bottom: 0pt;
+            margin-bottom: 5pt;
         }
 
         p {
@@ -55,7 +55,7 @@
                     <img src="profile.jpg" alt="Tanat Profile Picture" style="width: 190px;
                     height: 190px;
                     border-radius: 35%;">
-                    <h2>Tanat Arora</h2>
+                    <h2><span id="myName">Tanat Arora</span></h2>
                     Computer Science Student <br>
                 </div>
             </tr>
@@ -75,6 +75,22 @@
             </tr>
         </tbody>
     </table>
+
+    <button onclick="ChangeName()">Change Name</button>
+    <script>
+        console.log("Hello, Mr. Tanat");
+        var x = 10;
+        var y = 5;
+        var z = x + y;
+        console.log(z);
+
+        function ChangeName() {
+            // Change the name
+            var span = document.getElementById("myName");
+            span.innerHTML = "Welcome back, Mr. Wick!"
+            console.log("Button Clicked");
+        }
+    </script>
 </body>
 
 </html>
