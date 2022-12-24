@@ -28,6 +28,7 @@ function addToCart() {
     let elProduct = document.getElementById("products")
     let pVal = elProduct.value
     console.log(pVal)
+    
     let productObj = {
         name: $('#products').val(),
         quantity: $('#qty').val(),
