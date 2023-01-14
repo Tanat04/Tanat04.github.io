@@ -1,5 +1,5 @@
 var products = []
-
+// Load data from 'data.json' and append it into the products list
 $(document).ready(function() {
     console.log("Welcome To The Cellular Kingdom!!")
     // load data
@@ -14,6 +14,8 @@ $(document).ready(function() {
     });
 });    
 
+// loadData check product with same price and same item, combine them as one by adding up the quantity
+// it then load the whole table body row by row
 function loadData() {
     let allRows = ""
     let totalDiscount = 0
@@ -61,6 +63,8 @@ function loadData() {
     $("#net").html((net.toLocaleString("en-US")))
 }
 
+// Add product to the list and then call loadData()
+// It have some special condition for when the input is a negative numbers
 function addProduct() {
     let newName = (document.getElementById("exampleFormControlInput1")).value
     console.log(newName)
@@ -91,6 +95,7 @@ function addProduct() {
     loadData()
 }
 
+// This function delete the item by index from the list, and load the table again
 function deleteProduct(index) {
     console.log("Delete " + index)
     delete products[index]
@@ -99,6 +104,7 @@ function deleteProduct(index) {
     loadData()
 }
 
+// ClearData remove all item from the list and the table body
 function clearData() {
     if (!confirm("Are you sure you want to remove all the item in your cart? This action can't be undone")) {
         return;
