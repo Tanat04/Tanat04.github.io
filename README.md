@@ -4,6 +4,8 @@
 
 The purpose of this web page is to provide a tool for calculating one's cumulative GPA and semester GPA based on the coursework completed in the fields of Computer Science or Information Technology at Assumption University. Additionally, the web page offers a graphical representation of an individual's academic GPA journey through the utilization of a line chart.
 
+- [Project's Source Code](https://github.com/Tanat04/web-dev-project1)
+
 ## Project Desciption
 
 By default, the selected major on this web page is set to Computer Science. However, yopu may switch to Information Technology as their chosen major by making the necessary adjustments in the navigation bar.
